@@ -3,35 +3,39 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>All In Roofing & Construction | MS Gulf Coast Roofing Contractor</title>
-<meta name="description" content="All In Roofing & Construction — trusted residential and commercial roofing serving Gautier, Biloxi, Gulfport, Pascagoula, Ocean Springs and the MS Gulf Coast.">
+<title>All In Roofing & Construction | MS Gulf Coast Storm & Roof Repair</title>
+<meta name="description" content="All In Roofing & Construction — locally owned roofing contractor serving Gautier, Biloxi, Gulfport, Pascagoula, Ocean Springs and the MS Gulf Coast. Free estimates, 24/7 storm response.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@600;700;800&family=Work+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-<div class="topbar">
-  <a href="tel:2282180188">Call us: (228) 218-0188</a>
+<div class="utility-bar">
+  <div class="container utility-inner">
+    <span class="utility-emergency">24/7 Storm &amp; Emergency Response</span>
+    <a href="tel:2282180188" class="utility-phone">(228) 218-0188</a>
+  </div>
 </div>
 
-<header class="site-header">
+<header class="site-header" id="site-header">
   <div class="container header-inner">
     <a class="logo" href="#home">
-      <span class="logo-mark" aria-hidden="true">
-        <svg viewBox="0 0 48 48" width="34" height="34"><path d="M24 4 L44 20 H36 V42 H12 V20 H4 Z" fill="#0a1f44"/></svg>
-      </span>
+      <svg viewBox="0 0 48 48" width="30" height="30" aria-hidden="true"><path d="M24 4 L44 20 H36 V42 H12 V20 H4 Z" fill="currentColor"/></svg>
       <span class="logo-text">All In Roofing <em>&amp; Construction</em></span>
     </a>
 
     <nav class="main-nav" id="main-nav">
-      <a href="#home">Home</a>
-      <a href="#about">About</a>
       <a href="#services">Services</a>
+      <a href="#process">Our Process</a>
+      <a href="#areas">Areas Served</a>
       <a href="#projects">Projects</a>
-      <a href="#contact">Contact</a>
+      <a href="#about">About</a>
     </nav>
 
     <div class="header-actions">
-      <a class="btn btn-outline-dark header-cta" href="#contact">Get a Free Quote</a>
+      <a class="btn btn-amber header-cta" href="#quote">Get a Free Estimate</a>
       <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
         <span></span><span></span><span></span>
       </button>
@@ -43,136 +47,198 @@
 
   <!-- HERO -->
   <section class="hero" id="home">
+    <div class="hero-bg" aria-hidden="true">
+      <svg class="skyline" viewBox="0 0 1200 420" preserveAspectRatio="xMidYMax slice">
+        <defs>
+          <linearGradient id="glow" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stop-color="#DE9F3D" stop-opacity="0.35"/>
+            <stop offset="1" stop-color="#DE9F3D" stop-opacity="0"/>
+          </linearGradient>
+        </defs>
+        <ellipse cx="600" cy="300" rx="700" ry="220" fill="url(#glow)"/>
+        <g fill="#11213b">
+          <polygon points="0,420 0,300 60,300 90,260 120,300 180,300 180,420"/>
+          <polygon points="170,420 170,280 230,230 290,280 290,420"/>
+          <polygon points="280,420 280,320 330,320 330,420"/>
+          <polygon points="320,420 320,250 400,190 480,250 480,420"/>
+          <polygon points="470,420 470,310 560,310 560,420"/>
+          <polygon points="550,420 550,220 640,155 730,220 730,420"/>
+          <polygon points="720,420 720,300 790,300 790,420"/>
+          <polygon points="780,420 780,270 850,230 920,270 920,420"/>
+          <polygon points="910,420 910,330 970,330 970,420"/>
+          <polygon points="960,420 960,260 1040,205 1120,260 1120,420"/>
+          <polygon points="1110,420 1110,310 1200,310 1200,420"/>
+        </g>
+      </svg>
+      <div class="wisp wisp-1"></div>
+      <div class="wisp wisp-2"></div>
+    </div>
+
     <div class="container hero-grid">
+      <div class="hero-copy reveal">
+        <p class="eyebrow">Gautier, MS &middot; Locally Owned &middot; MS Gulf Coast</p>
+        <h1>Your Roof Takes the Storm.<br><span class="accent">We Take the Call.</span></h1>
+        <p class="hero-sub">Residential and commercial roofing built for the Gulf Coast climate — repair, replacement, inspections, and storm damage restoration, done right the first time.</p>
 
-      <div class="hero-copy">
-        <p class="eyebrow">Locally Owned &middot; MS Gulf Coast</p>
-        <h1>Your Trusted Roofing <span class="accent">Contractor</span> on the MS Gulf Coast</h1>
-        <p class="hero-sub">Quality roofing services for residential and commercial properties &mdash; installation, repair, inspections, and storm restoration done right the first time.</p>
-
-        <div class="hero-actions">
-          <a class="btn btn-primary" href="#contact">Get a Free Quote</a>
-          <a class="btn btn-outline" href="tel:2282180188">
-            <svg class="icon" viewBox="0 0 24 24" width="18" height="18"><path fill="currentColor" d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.6 21 3 13.4 3 4c0-.6.4-1 1-1h3.4c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.4 0 .8-.2 1z"/></svg>
-            Call Now
-          </a>
-        </div>
-
-        <div class="hero-stats">
-          <div class="stat">
-            <strong>24/7</strong>
-            <span>Emergency Service</span>
-          </div>
-          <div class="stat">
-            <strong>100%</strong>
-            <span>Locally Owned</span>
-          </div>
-          <div class="stat">
-            <strong>$0</strong>
-            <span>Cost Estimates</span>
-          </div>
-        </div>
+        <ul class="hero-trust">
+          <li><span class="num">24/7</span> Emergency Response</li>
+          <li><span class="num">100%</span> Locally Owned</li>
+          <li><span class="num">$0</span> Cost Estimates</li>
+        </ul>
       </div>
 
-      <div class="hero-visual">
-        <div class="hero-photo illustration">
-          <svg class="sparkle sparkle-1" viewBox="0 0 24 24" width="20" height="20"><path fill="#0a1f44" d="M12 0l2 10 10 2-10 2-2 10-2-10L0 12l10-2z"/></svg>
-          <svg class="sparkle sparkle-2" viewBox="0 0 24 24" width="14" height="14"><path fill="#c0392b" d="M12 0l2 10 10 2-10 2-2 10-2-10L0 12l10-2z"/></svg>
-          <svg viewBox="0 0 400 320" preserveAspectRatio="xMidYMax slice" class="illustration-svg">
-            <defs>
-              <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
-                <stop offset="0" stop-color="#e3ecf9"/>
-                <stop offset="1" stop-color="#ffffff"/>
-              </linearGradient>
-            </defs>
-            <rect width="400" height="320" fill="url(#sky)"/>
-            <circle cx="322" cy="66" r="32" fill="#c0392b" opacity="0.85"/>
-            <g fill="#ffffff">
-              <ellipse cx="78" cy="54" rx="30" ry="14"/>
-              <ellipse cx="104" cy="48" rx="22" ry="12"/>
-              <ellipse cx="52" cy="60" rx="18" ry="10"/>
-            </g>
-            <rect y="272" width="400" height="48" fill="#dfe3ea"/>
-            <rect x="120" y="172" width="160" height="100" fill="#ffffff" stroke="#0a1f44" stroke-width="3"/>
-            <rect x="250" y="112" width="18" height="44" fill="#5b6270"/>
-            <polygon points="98,172 200,98 302,172" fill="#0a1f44"/>
-            <line x1="98" y1="172" x2="302" y2="172" stroke="#14305e" stroke-width="4"/>
-            <rect x="185" y="212" width="30" height="60" fill="#c0392b"/>
-            <circle cx="208" cy="242" r="2.5" fill="#fff"/>
-            <rect x="139" y="196" width="30" height="30" fill="#e3ecf9" stroke="#0a1f44" stroke-width="2"/>
-            <rect x="231" y="196" width="30" height="30" fill="#e3ecf9" stroke="#0a1f44" stroke-width="2"/>
-          </svg>
-        </div>
+      <div class="hero-form-wrap reveal" id="quote">
+        <form class="hero-form" action="mailto:hrussell867@gmail.com" method="post" enctype="text/plain">
+          <p class="hero-form-eyebrow">Free, No-Pressure Estimate</p>
+          <h2>Get Your Roof Quote</h2>
 
-        <div class="info-card">
-          <h3>Quick Contact <span class="chevron">&rsaquo;</span></h3>
-          <ul>
-            <li>
-              <span class="info-icon">📞</span>
-              <span><strong>Phone</strong><br>(228) 218-0188</span>
-            </li>
-            <li>
-              <span class="info-icon">✉️</span>
-              <span><strong>Email</strong><br>hrussell867@gmail.com</span>
-            </li>
-            <li>
-              <span class="info-icon">🕑</span>
-              <span><strong>Available</strong><br>24/7 Emergency</span>
-            </li>
-            <li>
-              <span class="info-icon">📍</span>
-              <span><strong>Based in</strong><br>Gautier, MS</span>
-            </li>
-          </ul>
-        </div>
+          <label class="field">
+            <span>Name</span>
+            <input type="text" name="Name" required placeholder="Your name">
+          </label>
+
+          <label class="field">
+            <span>Phone</span>
+            <input type="tel" name="Phone" required placeholder="(228) 000-0000">
+          </label>
+
+          <label class="field">
+            <span>What do you need?</span>
+            <select name="Service">
+              <option>Roof Repair</option>
+              <option>Roof Replacement</option>
+              <option>Free Roof Inspection</option>
+              <option>Storm Damage / Insurance Claim</option>
+              <option>Other</option>
+            </select>
+          </label>
+
+          <button type="submit" class="btn btn-amber btn-block">Request My Free Estimate</button>
+          <p class="hero-form-alt">Prefer to talk now? <a href="tel:2282180188">Call (228) 218-0188</a></p>
+        </form>
       </div>
-
     </div>
   </section>
 
-  <!-- ABOUT -->
-  <section class="about" id="about">
-    <div class="container about-grid">
-      <div class="about-copy">
-        <h2>About Our Company</h2>
-        <p>All In Roofing is a trusted, locally owned roofing company proudly serving Gautier, Mississippi, and the surrounding Gulf Coast communities. With a commitment to quality craftsmanship and dependable service, we specialize in residential and commercial roofing solutions tailored to withstand the unique coastal climate.</p>
-        <p>Our team brings years of hands-on experience in roof installation, repairs, inspections, and storm damage restoration. Whether you need a minor repair or a complete roof replacement, we approach every project with professionalism, attention to detail, and a dedication to customer satisfaction.</p>
-        <p>At All In Roofing, we believe in doing the job right the first time. We use high-quality materials, proven techniques, and honest communication to ensure every customer feels confident in their investment. When you choose us, you're choosing reliability, integrity, and a team that's all in on protecting your home or business.</p>
+  <!-- TRUST STRIP -->
+  <section class="trust-strip reveal">
+    <div class="container trust-grid">
+      <div class="trust-item">
+        <span class="trust-num">8</span>
+        <span class="trust-label">Gulf Coast Communities Served</span>
       </div>
-      <div class="about-photo illustration">
-        <svg viewBox="0 0 400 320" preserveAspectRatio="xMidYMid slice" class="illustration-svg">
-          <defs>
-            <linearGradient id="sky2" x1="0" y1="0" x2="0" y2="1">
-              <stop offset="0" stop-color="#eef2f9"/>
-              <stop offset="1" stop-color="#ffffff"/>
-            </linearGradient>
-          </defs>
-          <rect width="400" height="320" fill="url(#sky2)"/>
-          <polygon points="0,320 400,320 400,60 0,220" fill="#0a1f44"/>
-          <g stroke="#25406e" stroke-width="3" opacity="0.6">
-            <line x1="0" y1="250" x2="400" y2="140"/>
-            <line x1="0" y1="285" x2="400" y2="185"/>
-            <line x1="20" y1="320" x2="400" y2="230"/>
-          </g>
-          <g transform="translate(60,58)">
-            <rect width="92" height="66" rx="6" fill="#ffffff" stroke="#0a1f44" stroke-width="3"/>
-            <line x1="12" y1="20" x2="80" y2="20" stroke="#dfe3ea" stroke-width="4"/>
-            <line x1="12" y1="34" x2="80" y2="34" stroke="#dfe3ea" stroke-width="4"/>
-            <line x1="12" y1="48" x2="60" y2="48" stroke="#dfe3ea" stroke-width="4"/>
-            <path d="M18 78 l10 14 l-14 -3 z" fill="#c0392b"/>
-          </g>
-          <g transform="translate(300,190)">
-            <circle r="34" fill="#ffffff" stroke="#0a1f44" stroke-width="3"/>
-            <path d="M-12 2 l8 8 16 -18" fill="none" stroke="#c0392b" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
-          </g>
-        </svg>
+      <div class="trust-item">
+        <span class="trust-num">24/7</span>
+        <span class="trust-label">Storm &amp; Emergency Response</span>
       </div>
+      <div class="trust-item">
+        <span class="trust-num">100%</span>
+        <span class="trust-label">Locally Owned &amp; Operated</span>
+      </div>
+      <div class="trust-item">
+        <span class="trust-num">$0</span>
+        <span class="trust-label">Free, No-Pressure Estimates</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section class="services" id="services">
+    <div class="container">
+      <p class="eyebrow center">What We Do</p>
+      <h2 class="center">Roofing Services for the Coast</h2>
+
+      <div class="services-grid">
+        <div class="service-card reveal">
+          <svg class="service-icon" viewBox="0 0 32 32"><path d="M4 16 16 6l12 10M8 14v12h16V14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <h3>Roof Repair &amp; Installation</h3>
+          <p>From single-leak fixes to full replacements, built to last.</p>
+        </div>
+        <div class="service-card reveal">
+          <svg class="service-icon" viewBox="0 0 32 32"><circle cx="14" cy="14" r="8" fill="none" stroke="currentColor" stroke-width="2"/><line x1="20" y1="20" x2="27" y2="27" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+          <h3>Roof Inspections</h3>
+          <p>A thorough, honest look before small problems become big ones.</p>
+        </div>
+        <div class="service-card reveal">
+          <svg class="service-icon" viewBox="0 0 32 32"><path d="M6 20c3 0 3-4 6-4s3 4 6 4 3-4 6-4 3 4 6 4M9 12l-2-4M16 10V6M23 12l2-4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <h3>Storm Restoration</h3>
+          <p>Rapid response after wind and hail damage, day or night.</p>
+        </div>
+        <div class="service-card reveal">
+          <svg class="service-icon" viewBox="0 0 32 32"><rect x="6" y="10" width="20" height="16" fill="none" stroke="currentColor" stroke-width="2"/><line x1="6" y1="16" x2="26" y2="16" stroke="currentColor" stroke-width="2"/><line x1="14" y1="10" x2="14" y2="26" stroke="currentColor" stroke-width="2"/></svg>
+          <h3>Residential &amp; Commercial</h3>
+          <p>Homes and businesses across the coast, one standard of quality.</p>
+        </div>
+        <div class="service-card reveal">
+          <svg class="service-icon" viewBox="0 0 32 32"><path d="M5 20h22M5 20l4-8h14l4 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>
+          <h3>Flat Roofing</h3>
+          <p>Low-slope systems built for proper coastal drainage.</p>
+        </div>
+        <div class="service-card reveal">
+          <svg class="service-icon" viewBox="0 0 32 32"><path d="M16 5 5 24h22z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M16 5v19M11 24 16 12l5 12" stroke="currentColor" stroke-width="1.6" fill="none"/></svg>
+          <h3>Metal Roofing</h3>
+          <p>Durable, energy-efficient standing-seam panels, expertly installed.</p>
+        </div>
+        <div class="service-card reveal">
+          <svg class="service-icon" viewBox="0 0 32 32"><rect x="7" y="5" width="18" height="22" rx="2" fill="none" stroke="currentColor" stroke-width="2"/><line x1="11" y1="12" x2="21" y2="12" stroke="currentColor" stroke-width="2"/><line x1="11" y1="17" x2="21" y2="17" stroke="currentColor" stroke-width="2"/><path d="M11 22h6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+          <h3>Insurance Claims</h3>
+          <p>We help document damage and work directly with your adjuster.</p>
+        </div>
+        <div class="service-card reveal">
+          <svg class="service-icon" viewBox="0 0 32 32"><rect x="5" y="14" width="8" height="5" fill="none" stroke="currentColor" stroke-width="1.6"/><rect x="14" y="14" width="8" height="5" fill="none" stroke="currentColor" stroke-width="1.6"/><rect x="9" y="9" width="8" height="5" fill="none" stroke="currentColor" stroke-width="1.6"/><rect x="18" y="9" width="8" height="5" fill="none" stroke="currentColor" stroke-width="1.6"/><rect x="5" y="19" width="8" height="5" fill="none" stroke="currentColor" stroke-width="1.6"/><rect x="14" y="19" width="8" height="5" fill="none" stroke="currentColor" stroke-width="1.6"/></svg>
+          <h3>Asphalt Roofing</h3>
+          <p>Reliable, cost-effective shingle roofing for any home.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROCESS -->
+  <section class="process" id="process">
+    <div class="container">
+      <p class="eyebrow center">How It Works</p>
+      <h2 class="center light">From First Call to Finished Roof</h2>
+
+      <div class="process-grid">
+        <div class="process-step reveal">
+          <span class="step-num">01</span>
+          <h3>Free Inspection</h3>
+          <p>We climb up, take photos, and tell you exactly what we find — no upsell.</p>
+        </div>
+        <div class="process-step reveal">
+          <span class="step-num">02</span>
+          <h3>Clear Estimate</h3>
+          <p>A written quote with real numbers, before any work begins.</p>
+        </div>
+        <div class="process-step reveal">
+          <span class="step-num">03</span>
+          <h3>Insurance Support</h3>
+          <p>If it's storm damage, we help document it and work your claim.</p>
+        </div>
+        <div class="process-step reveal">
+          <span class="step-num">04</span>
+          <h3>Expert Install</h3>
+          <p>Quality materials, clean job sites, and a roof built to hold.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- STORM SPOTLIGHT -->
+  <section class="spotlight">
+    <div class="spotlight-bg" aria-hidden="true"></div>
+    <div class="container spotlight-inner reveal">
+      <p class="eyebrow">Built for the Gulf Coast</p>
+      <h2>Standing-Seam Metal, Made for Hurricane Season</h2>
+      <p class="spotlight-copy">Metal roofing gives Gulf Coast homes a durable, energy-efficient, wind-rated defense with a sleek, modern look — and we back every install with expert workmanship.</p>
+      <a class="btn btn-light" href="tel:2282180188">Call Now</a>
     </div>
   </section>
 
   <!-- AREAS SERVED -->
-  <section class="areas">
+  <section class="areas" id="areas">
     <div class="container">
+      <p class="eyebrow center">Where We Work</p>
       <h2 class="center">Areas We Serve</h2>
       <div class="areas-grid">
         <div class="area-pill">Biloxi, MS</div>
@@ -187,54 +253,40 @@
     </div>
   </section>
 
-  <!-- FEATURED SERVICE BANNER -->
-  <section class="feature-banner metal-texture">
-    <div class="feature-overlay">
-      <div class="container">
-        <h2>Metal Roofing</h2>
-        <p>Metal roofing provides a durable, energy-efficient, and long-lasting solution with a sleek, modern look, and we deliver expert installation and repair you can trust.</p>
-        <a class="btn btn-light" href="tel:2282180188">Call Now</a>
+  <!-- ABOUT -->
+  <section class="about" id="about">
+    <div class="container about-grid">
+      <div class="about-copy reveal">
+        <p class="eyebrow">Who We Are</p>
+        <h2>About Our Company</h2>
+        <p>All In Roofing is a trusted, locally owned roofing company proudly serving Gautier, Mississippi, and the surrounding Gulf Coast communities. With a commitment to quality craftsmanship and dependable service, we specialize in residential and commercial roofing solutions tailored to withstand the unique coastal climate.</p>
+        <p>Our team brings years of hands-on experience in roof installation, repairs, inspections, and storm damage restoration. Whether you need a minor repair or a complete roof replacement, we approach every project with professionalism, attention to detail, and a dedication to customer satisfaction.</p>
+        <p>At All In Roofing, we believe in doing the job right the first time. We use high-quality materials, proven techniques, and honest communication to ensure every customer feels confident in their investment.</p>
       </div>
-    </div>
-  </section>
-
-  <!-- SERVICES -->
-  <section class="services" id="services">
-    <div class="container">
-      <h2 class="center">Our Services</h2>
-      <div class="services-grid">
-        <div class="service-card">
-          <span class="service-icon">🏠</span>
-          <h3>Roof Repair &amp; Installation</h3>
-        </div>
-        <div class="service-card">
-          <span class="service-icon">🔍</span>
-          <h3>Roof Inspections</h3>
-        </div>
-        <div class="service-card">
-          <span class="service-icon">🌪️</span>
-          <h3>Storm Restoration</h3>
-        </div>
-        <div class="service-card">
-          <span class="service-icon">🏢</span>
-          <h3>Residential &amp; Commercial Roofing</h3>
-        </div>
-        <div class="service-card">
-          <span class="service-icon">📐</span>
-          <h3>Flat Roofing</h3>
-        </div>
-        <div class="service-card">
-          <span class="service-icon">🔩</span>
-          <h3>Metal Roofing</h3>
-        </div>
-        <div class="service-card">
-          <span class="service-icon">📋</span>
-          <h3>Insurance Claims</h3>
-        </div>
-        <div class="service-card">
-          <span class="service-icon">🧱</span>
-          <h3>Asphalt Roofing</h3>
-        </div>
+      <div class="about-visual reveal">
+        <svg viewBox="0 0 400 340" class="about-svg">
+          <defs>
+            <linearGradient id="aboutGrad" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0" stop-color="#11213b"/>
+              <stop offset="1" stop-color="#0b1526"/>
+            </linearGradient>
+          </defs>
+          <rect width="400" height="340" rx="18" fill="url(#aboutGrad)"/>
+          <g transform="translate(60,60)">
+            <rect width="110" height="76" rx="8" fill="#f1efe7" opacity="0.06"/>
+            <rect x="14" y="18" width="82" height="6" rx="3" fill="#DE9F3D"/>
+            <rect x="14" y="34" width="82" height="6" rx="3" fill="#f1efe7" opacity="0.5"/>
+            <rect x="14" y="50" width="54" height="6" rx="3" fill="#f1efe7" opacity="0.5"/>
+          </g>
+          <g transform="translate(230,150)">
+            <circle r="52" fill="none" stroke="#DE9F3D" stroke-width="2" opacity="0.5"/>
+            <path d="M-20 0 l14 14 l28 -32" stroke="#DE9F3D" stroke-width="5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+          </g>
+          <g stroke="#f1efe7" stroke-width="1" opacity="0.12">
+            <line x1="0" y1="260" x2="400" y2="260"/>
+            <line x1="0" y1="290" x2="400" y2="290"/>
+          </g>
+        </svg>
       </div>
     </div>
   </section>
@@ -242,14 +294,15 @@
   <!-- RECENT PROJECTS -->
   <section class="projects" id="projects">
     <div class="container">
+      <p class="eyebrow">Our Work</p>
       <h2>Recent Projects</h2>
       <div class="projects-grid">
 
-        <figure class="project-card">
-          <div class="project-photo illustration">
-            <svg viewBox="0 0 200 160" preserveAspectRatio="xMidYMax slice" class="illustration-svg">
-              <rect width="200" height="160" fill="#eef1f5"/>
-              <rect y="128" width="200" height="32" fill="#dfe3ea"/>
+        <figure class="project-card reveal">
+          <div class="project-photo">
+            <svg viewBox="0 0 200 160" preserveAspectRatio="xMidYMax slice">
+              <rect width="200" height="160" fill="#EFEDE5"/>
+              <rect y="128" width="200" height="32" fill="#E2DFD3"/>
               <polygon points="30,128 100,64 170,128" fill="#2b2f36"/>
               <g stroke="#454b56" stroke-width="2">
                 <line x1="40" y1="118" x2="160" y2="118"/>
@@ -257,17 +310,16 @@
                 <line x1="56" y1="92" x2="144" y2="92"/>
                 <line x1="64" y1="79" x2="136" y2="79"/>
               </g>
-              <rect x="80" y="118" width="40" height="10" fill="#2b2f36"/>
             </svg>
           </div>
           <figcaption>Asphalt Shingle Reroof</figcaption>
         </figure>
 
-        <figure class="project-card">
-          <div class="project-photo illustration">
-            <svg viewBox="0 0 200 160" preserveAspectRatio="xMidYMax slice" class="illustration-svg">
-              <rect width="200" height="160" fill="#eef1f5"/>
-              <rect y="128" width="200" height="32" fill="#dfe3ea"/>
+        <figure class="project-card reveal">
+          <div class="project-photo">
+            <svg viewBox="0 0 200 160" preserveAspectRatio="xMidYMax slice">
+              <rect width="200" height="160" fill="#EFEDE5"/>
+              <rect y="128" width="200" height="32" fill="#E2DFD3"/>
               <polygon points="30,128 100,64 170,128" fill="#8fa3bf"/>
               <g stroke="#eef2f7" stroke-width="2">
                 <line x1="45" y1="122" x2="88" y2="72"/>
@@ -282,14 +334,14 @@
           <figcaption>Standing Seam Metal Roof</figcaption>
         </figure>
 
-        <figure class="project-card">
-          <div class="project-photo illustration">
-            <svg viewBox="0 0 200 160" preserveAspectRatio="xMidYMax slice" class="illustration-svg">
-              <rect width="200" height="160" fill="#eef1f5"/>
-              <rect y="128" width="200" height="32" fill="#dfe3ea"/>
+        <figure class="project-card reveal">
+          <div class="project-photo">
+            <svg viewBox="0 0 200 160" preserveAspectRatio="xMidYMax slice">
+              <rect width="200" height="160" fill="#EFEDE5"/>
+              <rect y="128" width="200" height="32" fill="#E2DFD3"/>
               <polygon points="30,128 100,64 170,128" fill="#2b2f36"/>
-              <polygon points="88,102 128,102 122,132 82,132" fill="#c0392b"/>
-              <g stroke="#0a1f44" stroke-width="6" stroke-linecap="round">
+              <polygon points="88,102 128,102 122,132 82,132" fill="#DE9F3D"/>
+              <g stroke="#0b1526" stroke-width="6" stroke-linecap="round">
                 <line x1="150" y1="118" x2="170" y2="98"/>
                 <line x1="160" y1="98" x2="170" y2="98"/>
                 <line x1="160" y1="98" x2="160" y2="108"/>
@@ -299,20 +351,20 @@
           <figcaption>Roof Repair &amp; Patching</figcaption>
         </figure>
 
-        <figure class="project-card">
-          <div class="project-photo illustration">
-            <svg viewBox="0 0 200 160" preserveAspectRatio="xMidYMax slice" class="illustration-svg">
-              <rect width="200" height="160" fill="#eef1f5"/>
-              <rect y="128" width="200" height="32" fill="#dfe3ea"/>
-              <polygon points="30,128 100,64 170,128" fill="#14305e"/>
+        <figure class="project-card reveal">
+          <div class="project-photo">
+            <svg viewBox="0 0 200 160" preserveAspectRatio="xMidYMax slice">
+              <rect width="200" height="160" fill="#EFEDE5"/>
+              <rect y="128" width="200" height="32" fill="#E2DFD3"/>
+              <polygon points="30,128 100,64 170,128" fill="#11213b"/>
               <g stroke="#8fa9d6" stroke-width="3" stroke-linecap="round">
                 <line x1="55" y1="70" x2="45" y2="86"/>
                 <line x1="70" y1="60" x2="60" y2="78"/>
                 <line x1="140" y1="70" x2="150" y2="86"/>
                 <line x1="125" y1="60" x2="135" y2="78"/>
               </g>
-              <circle cx="100" cy="118" r="18" fill="#ffffff"/>
-              <path d="M92 118 l6 6 12 -13" fill="none" stroke="#c0392b" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+              <circle cx="100" cy="118" r="18" fill="#EFEDE5"/>
+              <path d="M92 118 l6 6 12 -13" fill="none" stroke="#DE9F3D" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
             </svg>
           </div>
           <figcaption>Storm Damage Restoration</figcaption>
@@ -322,35 +374,55 @@
     </div>
   </section>
 
+  <!-- FINAL CTA -->
+  <section class="final-cta">
+    <div class="container final-cta-inner reveal">
+      <h2>Storm Damage? Don't Wait On a Leak.</h2>
+      <p>Talk to a real roofer today — free inspection, no pressure, no obligation.</p>
+      <div class="final-cta-actions">
+        <a class="btn btn-amber" href="#quote">Get a Free Estimate</a>
+        <a class="btn-phone" href="tel:2282180188">(228) 218-0188</a>
+      </div>
+    </div>
+  </section>
+
 </main>
 
-<!-- CONTACT / FOOTER -->
-<footer class="site-footer" id="contact">
+<!-- FOOTER -->
+<footer class="site-footer">
   <div class="container footer-grid">
+    <div class="footer-col footer-brand">
+      <p>All In Roofing &amp; Construction</p>
+      <p class="footer-tagline">Professional roofing and construction services, built for the Mississippi Gulf Coast.</p>
+    </div>
     <div class="footer-col">
-      <h3>Contact Us</h3>
-      <p>Phone: <a href="tel:2282180188">(228) 218-0188</a></p>
-      <p>Email: <a href="mailto:hrussell867@gmail.com">hrussell867@gmail.com</a></p>
+      <h3>Contact</h3>
+      <p><a href="tel:2282180188">(228) 218-0188</a></p>
+      <p><a href="mailto:hrussell867@gmail.com">hrussell867@gmail.com</a></p>
       <p>Available 24/7 for Emergency Services</p>
     </div>
     <div class="footer-col">
       <h3>Services</h3>
-      <p>Roof Repair &amp; Installation &bull; Roof Inspections &bull; Storm Restoration &bull; Residential &amp; Commercial Roofing &bull; Flat Roofing &bull; Metal Roofing &bull; Insurance Claims &bull; Asphalt Roofing</p>
+      <p>Roof Repair &amp; Installation &bull; Inspections &bull; Storm Restoration &bull; Residential &amp; Commercial &bull; Flat Roofing &bull; Metal Roofing &bull; Insurance Claims &bull; Asphalt Roofing</p>
     </div>
     <div class="footer-col">
-      <p>Professional roofing and construction services serving the community with quality workmanship and reliable solutions for all your residential and commercial roofing needs.</p>
-    </div>
-    <div class="footer-col footer-brand">
-      <p>All In Roofing &amp; Construction</p>
+      <h3>Areas Served</h3>
+      <p>Biloxi &bull; Gulfport &bull; Pascagoula &bull; Gautier &bull; Ocean Springs &bull; Vancleave &bull; Lucedale &bull; Hurley</p>
     </div>
   </div>
   <div class="footer-bottom">
     <div class="container footer-bottom-inner">
       <span>&copy; <span id="year"></span> All In Roofing &amp; Construction</span>
-      <a href="#contact">Terms and Policies</a>
+      <a href="#home">Back to top</a>
     </div>
   </div>
 </footer>
+
+<!-- STICKY MOBILE CALL BAR -->
+<div class="mobile-bar" id="mobile-bar">
+  <a class="mobile-bar-call" href="tel:2282180188">Call Now</a>
+  <a class="mobile-bar-quote" href="#quote">Free Estimate</a>
+</div>
 
 <script src="script.js"></script>
 </body>
