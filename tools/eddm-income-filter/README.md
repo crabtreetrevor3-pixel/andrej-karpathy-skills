@@ -31,8 +31,38 @@ python eddm_income_filter.py filter routes.csv --min-income 100000 --out filtere
 The CSV must contain an income column (any of: `Median Household Income`,
 `Average Household Income`, `Household Income`, `Income`).
 
+## Roof-lead scoring (home age + storm damage)
+
+`roof_lead_finder.py` scores target areas for roof-replacement lead
+potential, combining:
+
+- **Home age** — Census ACS median year structure built, by zip.
+- **Storm damage history** — NOAA Storm Events Database counts of hail,
+  thunderstorm wind, tornado, and hurricane/tropical storm events, by
+  county, over a lookback window.
+
+NOAA tracks storms by county, not zip, so you need a small mapping CSV
+(`zip,county,state`) for your target areas — see `areas_template.csv`.
+Fill in the `county` column (e.g. via a zip-to-county lookup) before
+running:
+
+```
+python roof_lead_finder.py score areas.csv --years 5 --out leads.csv
+```
+
+Output is a CSV ranked by `priority_score` (home age in years + storm
+event count × `--storm-weight`, default 3 points/event), so the areas at
+the top have the oldest homes and/or the most storm activity.
+
+This is a rough targeting signal, not a per-property inspection — county-level
+storm counts don't tell you which individual roofs were hit, and median
+year built is a zip-wide estimate, not a specific home's age. Use it to
+prioritize which zips/routes to target with EDDM, not as a substitute for
+an actual roof inspection.
+
 ## Note on this environment
 
 This tool's outbound network access is restricted and cannot reach
-`api.census.gov`, so `zip-income` must be run from a machine with normal
+`api.census.gov` or `www.ncei.noaa.gov`, so both `zip-income` and
+`roof_lead_finder.py score` must be run from a machine with normal
 internet access, not from this session.
