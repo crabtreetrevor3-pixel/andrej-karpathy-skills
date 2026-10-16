@@ -34,7 +34,7 @@ LEADS = [
 ("Regency Woods Apartments", "Apartment Complex", "4800 Long Ave", "Pascagoula", "39581", "", "", "", "", "https://redfin.com/city/14337/MS/Pascagoula/apartments-for-rent", ""),
 ("Morrison Village", "Apartment Complex", "2503 Old Mobile Ave", "Pascagoula", "39567", "", "", "", "", "https://redfin.com/city/14337/MS/Pascagoula/apartments-for-rent", ""),
 ("Taylor Heights Apartments", "Apartment Complex", "2313 Old Mobile Ave", "Pascagoula", "39567", "", "", "", "", "https://redfin.com/city/14337/MS/Pascagoula/apartments-for-rent", ""),
-("Ante Bellum Manor (condos)", "Apartment Complex", "5080 Gautier Vancleave Rd", "Gautier", "39553", "(228) 447-3727", "", "", "", "https://www.apartments.com/5080-gautier-vancleave-rd-gautier-ms/58b795p/", "Phone is from a unit rental listing"),
+("Ante Bellum Manor (condos)", "Apartment Complex", "5080 Gautier Vancleave Rd", "Gautier", "39553", "(228) 447-3727", "", "", "", "https://www.apartments.com/5080-gautier-vancleave-rd-gautier-ms/58b795p/", "Phone is Dronet Realty & Property Management (listing agent)"),
 # --- Auto ---
 ("Walmart Auto Care Center", "Auto Shop / Dealership", "4253 Denny Ave", "Pascagoula", "39581", "(228) 762-9662", "", "", "", "https://www.goodyear.com/en-us/shops/MS/Pascagoula/Walmart-Auto-Care-Center-1066-000188615", "National chain - roofing decisions likely corporate"),
 ("Gerber Collision & Glass - Pascagoula", "Auto Shop / Dealership", "2211 Denny Ave", "Pascagoula", "39567", "", "", "", "", "https://www.gerbercollision.com/locations/mississippi-ms", ""),
@@ -113,7 +113,7 @@ LEADS = [
 ("Magnolia Inn", "Commercial Building", "704 Hwy 90", "Gautier", "39553", "(228) 522-0288", "", "", "", "https://allstays.com/hotels/32256.htm", "Hotel"),
 # --- Property management ---
 ("Smith Gary Realty", "Property Management", "1964 Market St", "Pascagoula", "", "", "", "", "", "https://www.simplifyem.com/property-management-companies/company/smith-gary-realty-pascagoula-mississippi", ""),
-("Integrity Rise Management (Patriot Woods / Patriot on the Trace)", "Property Management", "Long Ave", "Pascagoula", "", "", "", "", "", "https://homefinder.com/apartments/Helena_MS/sby-6", "Manages several Pascagoula apartment complexes"),
+("Integrity Rise Management (Patriot Woods / Patriot on the Trace)", "Property Management", "Long Ave", "Pascagoula", "", "", "", "", "", "https://homefinder.com/apartments/Helena_MS/sby-6", "Manages Patriot Woods (4800 Long Ave), Patriot Orchard (5111 Orchard), Patriot Gardens, Patriot Pointe, Patriot on the Trace - one contact for several complexes; central office phone not found"),
 ("Shoreline Property Management / Shoreline Realty", "Property Management", "", "Gautier", "", "(228) 875-3332", "", "", "", "https://www.zumper.com/apartment-buildings/p1472556/8100-8104-exchange-street-gautier-ms", "Manages Exchange St duplexes in Gautier; office address not listed"),
 # --- Medical / dental ---
 ("Pascagoula Family Medicine", "Medical Office", "2819 Denny Ave", "Pascagoula", "", "(228) 696-9224", "", "", "", "https://doctor.webmd.com/practice/pascagoula-family-medicine-385bb23b-7345-e211-8ba5-001f29e3bb62", ""),
@@ -195,4 +195,11 @@ LEADS = [
 ("Warehouse - 2205 Petit Bois St", "Warehouse", "2205 Petit Bois St", "Pascagoula", "39581", "(228) 365-8763", "", "", "", "https://www.showcase.com/2205-petit-bois-st-pascagoula-ms-39581/35200689/", "For sale; phone is listing contact"),
 ("Bayou Village Apartments", "Apartment Complex", "off Martin Bluff Rd", "Gautier", "39553", "", "", "", "", "https://hotpads.com/bayou-village-gautier-ms-39553-srzv5x/pad", ""),
 ("Schroeder Real Estate Management", "Property Management", "", "Gautier", "", "(228) 604-2455", "", "", "", "https://www.apartments.com/2016-university-st-gautier-ms/55pydxn/", "Manages Gautier rentals; office address not listed"),
+# --- Property managers (round 4) ---
+("Alfonso Property Management / Coldwell Banker Commercial Alfonso Realty", "Property Management", "934 Jackson Ave", "Pascagoula", "39567", "(228) 818-5788", "", "", "alfonsopm.com", "https://alfonsopmjacksoncounty.property-genie.com/", "Residential + commercial property management and commercial leasing; brokers for Jackson Square (Gautier)"),
+("Dronet Realty & Property Management", "Property Management", "1741 Jackson Ave", "Pascagoula", "39567", "(228) 447-3727", "", "", "", "https://www.facebook.com/dronetrealty/", "Residential, commercial and land management"),
+("Dantzler Management", "Property Management", "3207 Frederic St", "Pascagoula", "", "(228) 762-4611", "", "", "", "https://www.yellowpages.com/pascagoula-ms/property-management", "In business 55 years per Yellow Pages"),
+("Ms Gulf Coast Rental Properties", "Property Management", "", "Pascagoula", "", "", "", "", "", "https://www.yellowpages.com/pascagoula-ms/property-management", "Named in Pascagoula property management directory; address/phone not shown"),
+("Seaman & Associates", "Property Management", "", "Pascagoula", "", "", "", "", "", "https://www.yellowpages.com/pascagoula-ms/property-management", "Named in Pascagoula property management directory; address/phone not shown"),
+("Revitalize Realty", "Property Management", "", "Pascagoula", "", "", "", "", "", "https://www.yellowpages.com/pascagoula-ms/property-management", "Named in Pascagoula property management directory; address/phone not shown"),
 ]
